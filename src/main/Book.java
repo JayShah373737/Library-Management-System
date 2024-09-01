@@ -1,7 +1,5 @@
 package com.example.library;
 
-import java.util.UUID;
-
 public class Book {
 
     private String isbn;
@@ -10,16 +8,14 @@ public class Book {
     private int publicationYear;
     private boolean available;
 
-    // Constructor
-    public Book(String isbn,String title, String author, int publicationYear) {
+    public Book(String isbn, String title, String author, int publicationYear) {
         this.isbn = isbn;
         this.title = title;
         this.author = author;
         this.publicationYear = publicationYear;
-        this.available = true; // Assume available by default
+        this.available = true; 
     }
 
-    // Getter methods
     public String getId() {
         return isbn;
     }
